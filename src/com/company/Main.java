@@ -9,11 +9,12 @@ public class Main {
 
 
         System.out.println("Please enter your mark");
-        int mark = input.nextInt();
+        float mark = input.nextFloat();
         while (mark < 0 || mark > 100) {
             System.out.println("Incorrect mark inputted");
         }
-        double percentage = (double)(mark / 50) * 100;
+        float percentage = (mark / 50) * 100;
+        System.out.println(percentage);
         if (percentage >= 80) {
             System.out.println("Your grade is A");
         } else if (percentage >= 70 && percentage <= 79) {
